@@ -212,7 +212,6 @@ h2 {
 
 
 .foto {
-  
   margin-right: 30px;
   position: relative;
 }
@@ -221,7 +220,6 @@ h2 {
 }
 .foto-item{
   display: block;
- 
 }
 
 .foto-list{
@@ -238,7 +236,7 @@ h2 {
   color: #FFFFFF;
   
   position: absolute;
- 
+   
   left: 0;
   bottom: 0;
   background-color: rgba(47, 48, 58, 0.8);
@@ -633,6 +631,8 @@ h2 {
 
   cursor: pointer;
 
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .flex-element:hover .flex-element-text{
@@ -641,6 +641,9 @@ h2 {
 
 .filther-flex{
   text-decoration: none;
+  
+
+
 }
 .flex-element:nth-child(3n) {
   margin-right: 0;
@@ -664,6 +667,7 @@ h2 {
   display: block;
 
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 
 .filther-flex:hover,
@@ -805,6 +809,7 @@ h2 {
 .modal-close{
   width: 30px;
   height: 30px;
+  border-radius: 50%;
   position: absolute;
   top: 8px;
   right: 8px;
@@ -813,6 +818,12 @@ h2 {
   justify-content: center;
 
 }
+
+.modal-close-icon{
+  border-radius: 50%;
+
+}
+
 .is-hidden{
   visibility: hidden;
   opacity: 0;
